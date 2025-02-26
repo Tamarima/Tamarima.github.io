@@ -26,20 +26,3 @@ permalink: /
   <a href="activities.md" class="btn">🚀 課外活動</a>
   <a href="contact.md" class="btn">📬 お問い合わせ</a>
 </div>
-
-<style>
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #0078D7;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  .btn:hover {
-    background-color: #0053A6;
-  }
-</style>
