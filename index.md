@@ -17,12 +17,3 @@ permalink: /
 また、長期インターンシップやロボコンへの挑戦を通じて、**実践的なエンジニアリングスキル** を磨いてきました。
 
 ---
-
-## 🌟 メニュー
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <a href="about.md" class="btn">📌 自己紹介</a>
-  <a href="research.md" class="btn">🔬 研究内容</a>
-  <a href="internship.md" class="btn">🏢 インターン経験</a>
-  <a href="activities.md" class="btn">🚀 課外活動</a>
-  <a href="contact.md" class="btn">📬 お問い合わせ</a>
-</div>
