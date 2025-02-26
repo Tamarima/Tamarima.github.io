@@ -8,7 +8,8 @@ permalink: /
 
 🚀 **機械・電気システム工学 / 研究者 / エンジニア**
 
-![プロフィール画像]([https://github.com/Tamarima/Tamarima.github.io/issues/1#issue-2882826818](https://private-user-images.githubusercontent.com/94211555/417330055-e5d97012-292f-4465-ac67-9080005f5500.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA2MDQ5NzgsIm5iZiI6MTc0MDYwNDY3OCwicGF0aCI6Ii85NDIxMTU1NS80MTczMzAwNTUtZTVkOTcwMTItMjkyZi00NDY1LWFjNjctOTA4MDAwNWY1NTAwLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjI2VDIxMTc1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIzNDA3MjlkZjNlNWMzZDJkZDY4MmQ2ZTJhNGZiZTcwODBhNTYzNDhmZWJjZTE5NGVkNGNlMDlkNzVlZTgyMmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.RMKspqnlNt-4IKKrtP40-TwBQI2DEJ6OWMsNRtzySLo))  <!-- 自分の画像を入れる -->
+<img src="/images/証明写真.jpg" alt="プロフィール写真" width="300">
+
 
 ## 🔥 プロフィール
 京都先端科学大学大学院 機械電気システム工学専攻で **機械材料・データ解析** に関する研究を行っています。  
