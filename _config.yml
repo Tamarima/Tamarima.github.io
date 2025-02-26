@@ -1,27 +1,14 @@
-remote_theme: "mmistakes/minimal-mistakes"
+theme: minima
 title: "竹嶋亮馬 ポートフォリオ"
 description: "機械工学×データ解析の研究者ポートフォリオ"
 
-# ナビゲーションメニュー
-nav:
-  - title: "ホーム"
-    url: /
-  - title: "自己紹介"
-    url: /about/
-  - title: "研究内容"
-    url: /research/
-  - title: "インターン経験"
-    url: /internship/
-  - title: "課外活動"
-    url: /activities/
-  - title: "お問い合わせ"
-    url: /contact/
-
-# プラグイン（GitHub Pages で有効にする）
-plugins:
-  - jekyll-remote-theme
-  - jekyll-sitemap
-  - jekyll-feed
+# ナビゲーションメニュー（手動でリンクを作成）
+header_pages:
+  - about.md
+  - research.md
+  - internship.md
+  - activities.md
+  - contact.md
 
 # Markdownの設定
 markdown: kramdown
