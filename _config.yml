@@ -3,7 +3,7 @@ title: "竹嶋亮馬 ポートフォリオ"
 description: "機械工学×データ解析の研究者ポートフォリオ"
 
 # ナビゲーションメニュー
-navigation:
+nav:
   - title: "ホーム"
     url: /
   - title: "自己紹介"
