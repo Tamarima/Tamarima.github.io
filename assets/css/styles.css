@@ -11,7 +11,12 @@
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
 }
 
 /* ========================= */
@@ -21,24 +26,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   margin: 20px 0;
 }
 
 .menu-button {
   display: inline-block;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 12px 24px;
+  border-radius: 8px;
   background: #0066cc;
   color: white;
   font-weight: bold;
   text-align: center;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .menu-button:hover {
   background: #004499;
+  transform: scale(1.05);
 }
 
 /* レスポンシブ対応 */
@@ -49,27 +55,31 @@
   }
 
   .menu-button {
-    width: 80%;
-    text-align: center;
+    width: 90%;
   }
 }
 
 /* ========================= */
-/* ✅ 画像ギャラリー（課外活動用） */
+/* ✅ 画像ギャラリー（課外活動・研究ページ） */
 /* ========================= */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
 }
 
 .gallery img {
-  width: 300px;
-  height: 200px;
+  width: 320px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* ========================= */
@@ -78,22 +88,29 @@
 form {
   background: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 input, textarea {
   border: 1px solid #aaa;
-  transition: border 0.3s;
+  transition: border 0.3s, box-shadow 0.3s;
 }
 
 input:focus, textarea:focus {
   border: 1px solid #0066cc;
   outline: none;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
 }
 
 button {
-  border-radius: 6px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #004499;
+  transform: scale(1.05);
 }
 
 /* ========================= */
@@ -113,20 +130,27 @@ footer p {
 footer a {
   color: #fff;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 footer a:hover {
   color: #1DA1F2;
 }
+
 /* ========================= */
 /* ✅ プロジェクト一覧のスタイル */
 /* ========================= */
 .project-card {
   background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   margin: 20px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-card h3 {
@@ -134,25 +158,7 @@ footer a:hover {
 }
 
 .project-card p {
-  margin: 5px 0;
-}
-
-/* ========================= */
-/* ✅ 画像ギャラリーの改善 */
-/* ========================= */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 8px 0;
 }
 
 /* ========================= */
@@ -166,24 +172,13 @@ footer a:hover {
 }
 
 .research-results img {
-  width: 300px;
+  width: 320px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* 画像ギャラリー */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.research-results img:hover {
+  transform: scale(1.05);
 }
