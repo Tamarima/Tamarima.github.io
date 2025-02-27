@@ -1,4 +1,81 @@
 /* ========================= */
+/* ✅ ヘッダー・ナビゲーション */
+/* ========================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.9);
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* ✅ ハンバーガーメニュー（モバイル対応） */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+/* ✅ モバイル対応ナビゲーション */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    text-align: center;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+}
+
+/* ========================= */
 /* ✅ プロフィール画像のスタイル */
 /* ========================= */
 .profile-container {
@@ -47,7 +124,7 @@
   transform: scale(1.05);
 }
 
-/* レスポンシブ対応 */
+/* ✅ レスポンシブ対応 */
 @media (max-width: 768px) {
   .menu-container {
     flex-direction: column;
