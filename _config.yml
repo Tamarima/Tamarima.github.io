@@ -1,8 +1,11 @@
+# テーマ設定（GitHub Pages 無料版で動作可能）
 remote_theme: "mmistakes/minimal-mistakes"
+
+# サイト情報
 title: "竹嶋亮馬 ポートフォリオ"
 description: "機械工学×データ解析の研究者ポートフォリオ"
 
-# ナビゲーションメニュー
+# ナビゲーション
 nav:
   - title: "ホーム"
     url: /
@@ -17,7 +20,7 @@ nav:
   - title: "お問い合わせ"
     url: /contact/
 
-# プラグイン
+# GitHub Pages で動作するプラグイン
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
@@ -25,6 +28,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-# Markdownの設定
+# Markdown 設定
 markdown: kramdown
 highlighter: rouge
