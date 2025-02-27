@@ -13,3 +13,16 @@ header_pages:
 # Markdownの設定
 markdown: kramdown
 highlighter: rouge
+
+# _config.yml
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+# 以下を追加
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
