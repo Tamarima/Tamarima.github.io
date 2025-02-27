@@ -178,3 +178,56 @@ input, textarea {
     padding: 10px;
   }
 }
+
+/* 問い合わせボタン */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.contact-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+.github { background-color: #333; }
+.twitter { background-color: #1DA1F2; }
+.linkedin { background-color: #0077B5; }
+
+/* フォーム */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004499;
+}
+
