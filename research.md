@@ -88,9 +88,9 @@ permalink: /research/
 
 ---
 
-## 📷 **研究画像**
-<div class="gallery">
-  <img src="/assets/images/research.jpg" alt="研究概要">
+## 📷 研究画像
+<div class="research-image-container">
+  <img src="/assets/images/research.jpg" alt="研究成果">
 </div>
 
 ---
