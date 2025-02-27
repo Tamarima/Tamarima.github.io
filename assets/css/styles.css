@@ -118,3 +118,39 @@ footer a {
 footer a:hover {
   color: #1DA1F2;
 }
+/* ========================= */
+/* ✅ プロジェクト一覧のスタイル */
+/* ========================= */
+.project-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  margin: 5px 0;
+}
+
+/* ========================= */
+/* ✅ 画像ギャラリーの改善 */
+/* ========================= */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
