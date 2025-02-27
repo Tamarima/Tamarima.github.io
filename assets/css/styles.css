@@ -160,6 +160,29 @@ nav ul li a:hover {
 }
 
 /* ========================= */
+/* ✅ 研究画像のスタイル（特大サイズ） */
+/* ========================= */
+.research-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.research-image-container img {
+  width: 80%; /* 画面幅の80% */
+  max-width: 900px; /* 最大幅を900pxに設定 */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.research-image-container img:hover {
+  transform: scale(1.05);
+}
+
+
+/* ========================= */
 /* ✅ フォームデザインの改良 */
 /* ========================= */
 form {
