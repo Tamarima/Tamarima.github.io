@@ -68,7 +68,7 @@ description: "竹嶋亮馬の課外活動 - 国際ロボコン・アプリ開発
 <div class="gallery">
   <img src="/assets/images/iros_award.jpg" alt="IROS 2021 表彰状">
   <img src="/assets/images/iros_team.jpg" alt="IROS 2021 チーム写真">
-  <img src="/assets/images/research.jpg" alt="研究成果">
+  <img src="/assets/images/iros_virtual.jpg" alt="研究成果">
 </div>
 
 ---
