@@ -58,11 +58,10 @@ permalink: /activities/
 ---
 
 ## 📸 **フォトギャラリー**
-<div class="gallery">
-  <img src="/assets/images/iros_award.jpg" alt="IROS 2021 表彰状">
-  <img src="/assets/images/iros_virtual.jpg" alt="IROS 2021 バーチャル競技の様子">
-  <img src="/assets/images/iros_team.jpg" alt="IROS 2021 チーム集合写真">
-</div>
+![研究成果](/assets/images/research.jpg)
+![IROS 2021 表彰状](/assets/images/iros_award.jpg)
+![IROS 2021 チーム写真](/assets/images/iros_team.jpg)
+
 
 ---
 
