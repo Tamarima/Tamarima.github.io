@@ -1,20 +1,31 @@
 /* assets/css/styles.css */
+
+/* 全体のスタイル */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4; /* 背景色を淡いグレーに設定 */
+  color: #333; /* 文字色を濃いグレーに設定 */
 }
 
+/* ヘッダーのスタイル */
 header {
-  background-color: #333;
+  background-color: #333; /* 背景色を濃いグレーに設定 */
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
+/* ナビゲーションメニューのスタイル */
 nav ul {
   list-style: none;
   padding: 0;
   text-align: center;
+  margin: 0;
 }
 
 nav ul li {
@@ -23,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #fff; /* 文字色を白に設定 */
   text-decoration: none;
   font-weight: bold;
 }
@@ -32,16 +43,81 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* メインコンテンツのスタイル */
 main {
-  padding: 20px;
+  padding: 80px 20px 20px; /* ヘッダーの高さを考慮して上部に余白を追加 */
 }
 
+/* フッターのスタイル */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* 背景色を濃いグレーに設定 */
+  color: #fff; /* 文字色を白に設定 */
   text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+/* リンクのスタイル */
+a {
+  color: #0066cc; /* リンクの文字色を青に設定 */
+}
+
+a:hover {
+  color: #004499; /* ホバー時のリンクの文字色を濃い青に設定 */
+  text-decoration: none;
+}
+
+/* 画像のスタイル */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* セクションのスタイル */
+section {
+  margin-bottom: 40px;
+}
+
+/* 見出しのスタイル */
+h1, h2, h3, h4, h5, h6 {
+  color: #333; /* 見出しの文字色を濃いグレーに設定 */
+  margin-bottom: 20px;
+}
+
+/* ボタンのスタイル */
+button {
+  background-color: #0066cc; /* ボタンの背景色を青に設定 */
+  color: #fff; /* ボタンの文字色を白に設定 */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004499; /* ホバー時のボタンの背景色を濃い青に設定 */
+}
+
+/* フォーム要素のスタイル */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 100px 10px 20px; /* モバイル表示での余白調整 */
+  }
 }
