@@ -6,49 +6,74 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* 背景色を淡いグレーに設定 */
-  color: #333; /* 文字色を濃いグレーに設定 */
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* ヘッダーのスタイル */
 header {
-  background-color: #333;
-  padding: 10px 0;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: 1000;
+  transition: background 0.3s;
+  background-color: rgba(51, 51, 51, 0.8); /* 背景を半透明に */
+  padding: 10px 0;
 }
 
 /* ナビゲーションメニューのスタイル */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
-  text-align: center;
   margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  margin: 0;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.2);
 }
 
-/* メインコンテンツのスタイル */
+/* ハンバーガーメニュー */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* メインコンテンツ */
 main {
-  padding: 80px 20px 20px;
+  padding: 100px 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* 画像のスタイル（修正部分） */
+/* 画像のスタイル */
 .image-container {
   display: flex;
   flex-wrap: wrap;
@@ -57,22 +82,21 @@ main {
 }
 
 .image-container img {
-  width: 300px; /* 幅を固定 */
-  height: 200px; /* 高さを固定 */
-  object-fit: cover; /* 縦横比を維持しつつトリミング */
-  border-radius: 8px; /* 角を丸く */
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* フッターのスタイル */
+/* フッター */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
+  padding: 20px 0;
+  position: relative;
   width: 100%;
-  bottom: 0;
 }
 
 /* リンクのスタイル */
@@ -85,31 +109,33 @@ a:hover {
   text-decoration: none;
 }
 
-/* セクションのスタイル */
+/* セクション */
 section {
   margin-bottom: 40px;
 }
 
-/* 見出しのスタイル */
+/* 見出し */
 h1, h2, h3, h4, h5, h6 {
   color: #333;
   margin-bottom: 20px;
 }
 
-/* ボタンのスタイル */
+/* ボタン */
 button {
   background-color: #0066cc;
   color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
 button:hover {
   background-color: #004499;
 }
 
-/* フォーム要素のスタイル */
+/* フォーム */
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -120,12 +146,35 @@ input, textarea {
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  main {
-    padding: 100px 10px 20px;
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
   }
 }
