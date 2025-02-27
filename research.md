@@ -93,3 +93,13 @@ GitHubの `images/` フォルダにアップロードし、Markdown に画像リ
 ![スパッタリング装置](images/sputtering_machine.jpg)
 ![引張試験](images/tensile_test.jpg)
 ![アニール処理](images/annealing_process.jpg)
+
+---
+
+### **🔹 使い方**
+1. **GitHubリポジトリの `research.md` にコピペ**
+2. **画像を `images/` フォルダにアップロード**
+3. **必要なら図やグラフを追加**
+
+このようにすると、研究の背景から成果、今後の展望まで詳細に整理され、**採用担当者や研究者にとってわかりやすく、説得力のあるページ** になります。
+
