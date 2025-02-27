@@ -181,6 +181,26 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
+/* ========================= */
+/* ✅ テーブルのスタイル修正 */
+/* ========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
 
 /* ========================= */
 /* ✅ フォームデザインの改良 */
