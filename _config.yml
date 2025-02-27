@@ -5,50 +5,34 @@ lang: "ja"
 url: "https://tamarima.github.io"
 baseurl: ""
 
-# --- テーマ設定（GitHub Pages 無料版で動作可能）---
-remote_theme: "mmistakes/minimal-mistakes"
-
-# --- 作者情報 ---
-author:
-  name: "竹嶋亮馬"
-  email: "your-email@example.com"
-  avatar: "/assets/images/avatar.png"
-  bio: "機械工学×データ解析を専門とする研究者"
-  location: "日本"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/Tamarima"
-
-
 # --- ナビゲーション ---
 nav:
   - title: "ホーム"
-    url: /
+    url: "/"
   - title: "自己紹介"
-    url: /about/
+    url: "/about/"
   - title: "研究内容"
-    url: /research/
+    url: "/research/"
   - title: "インターン経験"
-    url: /internship/
+    url: "/internship/"
   - title: "課外活動"
-    url: /activities/
+    url: "/activities/"
   - title: "お問い合わせ"
-    url: /contact/
+    url: "/contact/"
 
-# --- コレクション (複数ページ管理用) ---
+# --- コレクション修正 ---
 collections:
   research:
     output: true
-    permalink: /research/:path/
+    permalink: "/research/:title/"
   internship:
     output: true
-    permalink: /internship/:path/
+    permalink: "/internship/:title/"
   activities:
     output: true
-    permalink: /activities/:path/
+    permalink: "/activities/:title/"
 
-# --- GitHub Pages で動作するプラグイン ---
+# --- GitHub Pages 設定 ---
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
@@ -63,28 +47,3 @@ highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
-
-# --- ページネーション設定 ---
-paginate: 5
-paginate_path: "/page:num/"
-
-# --- 高速化設定 (読み込み速度改善) ---
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-# --- ファイル除外設定 (ビルド対象外のファイル) ---
-exclude:
-  - "node_modules"
-  - "vendor"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "Rakefile"
-  - "LICENSE"
-  - ".github"
-  - ".gitignore"
-
-# --- Google Analytics (必要なら有効化) ---
-google_analytics: "UA-XXXXXXXXX-X"
