@@ -17,12 +17,13 @@ permalink: /
 
 ## 🔍 **メニュー**
 <div class="menu-container">
-  <a href="about.md" class="menu-button">🧑‍🎓 自己紹介</a>
-  <a href="research.md" class="menu-button">🔬 研究内容</a>
-  <a href="internship.md" class="menu-button">🏢 インターン経験</a>
-  <a href="activities.md" class="menu-button">🎯 課外活動</a>
-  <a href="contact.md" class="menu-button">📩 お問い合わせ</a>
+  <a href="/about/" class="menu-button">🧑‍🎓 自己紹介</a>
+  <a href="/research/" class="menu-button">🔬 研究内容</a>
+  <a href="/internship/" class="menu-button">🏢 インターン経験</a>
+  <a href="/activities/" class="menu-button">🎯 課外活動</a>
+  <a href="/contact/" class="menu-button">📩 お問い合わせ</a>
 </div>
+
 
 ---
 
