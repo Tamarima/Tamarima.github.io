@@ -3,9 +3,10 @@ title: "竹嶋亮馬 ポートフォリオ"
 description: "機械工学×データ解析の研究者ポートフォリオ"
 lang: "ja"
 url: "https://tamarima.github.io"
-baseurl: ""
+baseurl: ""  # GitHub Pages の `baseurl` は空で OK
+author: "竹嶋亮馬"
 
-# --- ナビゲーション ---
+# --- ナビゲーション（動的生成対応） ---
 nav:
   - title: "ホーム"
     url: "/"
@@ -20,7 +21,7 @@ nav:
   - title: "お問い合わせ"
     url: "/contact/"
 
-# --- コレクション修正 ---
+# --- コレクション設定（正しいURL生成） ---
 collections:
   research:
     output: true
@@ -34,16 +35,26 @@ collections:
 
 # --- GitHub Pages 設定 ---
 plugins:
-  - jekyll-remote-theme
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-archives
+  - jekyll-remote-theme  # GitHub Pages でカスタムテーマを利用
+  - jekyll-sitemap       # 自動サイトマップ生成（SEO向上）
+  - jekyll-feed          # RSS フィードの自動生成
+  - jekyll-seo-tag       # SEO タグの自動生成（メタ情報最適化）
+  - jekyll-paginate      # 記事のページネーション（複数ページ対応）
+  - jekyll-archives      # アーカイブ機能（過去記事整理）
+  - jekyll-minifier      # HTML, CSS, JS の圧縮（サイト高速化）
+  - jekyll-assets        # 画像の圧縮・最適化（軽量化）
 
 # --- Markdown 設定 ---
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true  # 改行を自動で反映（Markdown の可読性向上）
+
+# --- ビルド設定 ---
+exclude:
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
