@@ -1,6 +1,6 @@
 ---
-layout: home
-title: "竹嶋亮馬"
+layout: default
+title: "竹嶋亮馬 - ポートフォリオ"
 permalink: /
 ---
 
@@ -8,7 +8,7 @@ permalink: /
 **機械工学 × データ解析を活用した研究者・エンジニア**
 
 <div class="profile-container">
-  <img src="images/profile.jpg" alt="竹嶋亮馬" class="profile-image">
+  <img src="/assets/images/profile.jpg" alt="竹嶋亮馬" class="profile-image">
   <p>京都先端科学大学大学院で機械工学を専攻し、特に「**薄膜材料の機械特性**」や「**データ解析を活用した材料設計**」について研究しています。<br>
   機械工学・データサイエンス・ロボティクスに興味のある方、ぜひご覧ください！</p>
 </div>
@@ -24,7 +24,6 @@ permalink: /
   <a href="/contact/" class="menu-button">📩 お問い合わせ</a>
 </div>
 
-
 ---
 
 ## 📢 **このサイトについて**
@@ -35,7 +34,7 @@ permalink: /
 ✅ **機械工学分野の最新技術・手法**  
 ✅ **産業応用に向けた実践的なスキル**
 
-企業の採用担当の方、共同研究を検討されている方、ぜひお気軽に [お問い合わせ](contact.md) ください！  
+企業の採用担当の方、共同研究を検討されている方、ぜひお気軽に [お問い合わせ](/contact/) ください！  
 また、GitHub でも開発プロジェクトを公開しています。興味がある方は覗いてみてください。
 
 ---
