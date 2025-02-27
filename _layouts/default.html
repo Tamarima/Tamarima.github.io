@@ -1,125 +1,46 @@
-<header>
-  <div class="nav-container">
-    <button class="menu-toggle" aria-label="メニューを開閉" aria-expanded="false">☰</button>
-    <nav class="nav-menu" aria-label="メインナビゲーション">
-      <ul role="menu">
-        <li role="menuitem"><a href="/">🏠 ホーム</a></li>
-        <li role="menuitem"><a href="/about/">🧑‍💼 自己紹介</a></li>
-        <li role="menuitem"><a href="/research/">🔬 研究内容</a></li>
-        <li role="menuitem"><a href="/internship/">🏢 インターン経験</a></li>
-        <li role="menuitem"><a href="/activities/">🎯 課外活動</a></li>
-        <li role="menuitem"><a href="/contact/">📩 お問い合わせ</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <button class="menu-toggle" aria-label="メニューを開閉" aria-expanded="false">☰</button>
+      <nav class="nav-menu" aria-label="メインナビゲーション">
+        <ul role="menu">
+          <li role="menuitem"><a href="/">🏠 ホーム</a></li>
+          <li role="menuitem"><a href="/about/">🧑‍💼 自己紹介</a></li>
+          <li role="menuitem"><a href="/research/">🔬 研究内容</a></li>
+          <li role="menuitem"><a href="/internship/">🏢 インターン経験</a></li>
+          <li role="menuitem"><a href="/activities/">🎯 課外活動</a></li>
+          <li role="menuitem"><a href="/contact/">📩 お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
+  <main>
+    {{ content }}  <!-- ここが重要！ -->
+  </main>
 
-    // 初期化：メニューを非表示
-    navMenu.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
+  <footer>
+    <p>&copy; 2025 竹嶋亮馬</p>
+  </footer>
 
-    menuToggle.addEventListener("click", function () {
-      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
-      menuToggle.setAttribute("aria-expanded", !expanded);
-      navMenu.classList.toggle("open");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+      menuToggle.addEventListener("click", function () {
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", !expanded);
+        navMenu.classList.toggle("open");
+      });
     });
-  });
-</script>
-
-<style>
-  /* ========================= */
-  /* ✅ ヘッダーの基本デザイン */
-  /* ========================= */
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  /* ========================= */
-  /* ✅ メニューのスタイル */
-  /* ========================= */
-  .nav-menu ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-menu li {
-    display: inline;
-  }
-
-  .nav-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 6px;
-    transition: background 0.3s;
-  }
-
-  .nav-menu a:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  /* ========================= */
-  /* ✅ ハンバーガーメニュー */
-  /* ========================= */
-  .menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  /* ========================= */
-  /* ✅ スマホ対応ナビゲーション */
-  /* ========================= */
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 50px;
-      right: 0;
-      background: #333;
-      width: 100%;
-      padding: 10px 0;
-      text-align: center;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .nav-menu.open {
-      display: flex;
-    }
-
-    .nav-menu ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .nav-menu a {
-      display: block;
-      padding: 12px;
-    }
-  }
-</style>
+  </script>
+</body>
+</html>
