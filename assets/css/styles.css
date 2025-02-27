@@ -1,87 +1,70 @@
-/* assets/css/styles.css */
-
-/* 全体のスタイル */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+/* ========================= */
+/* ✅ プロフィール画像のスタイル */
+/* ========================= */
+.profile-container {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* ヘッダーのスタイル */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: background 0.3s;
-  background-color: rgba(51, 51, 51, 0.8); /* 背景を半透明に */
-  padding: 10px 0;
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ナビゲーションメニューのスタイル */
-.nav-container {
+/* ========================= */
+/* ✅ メニューボタン（トップページ） */
+/* ========================= */
+.menu-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  color: #fff;
+.menu-button {
+  display: inline-block;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: #0066cc;
+  color: white;
   font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
+  text-align: center;
   transition: background 0.3s;
 }
 
-nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.2);
+.menu-button:hover {
+  background: #004499;
 }
 
-/* ハンバーガーメニュー */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-button {
+    width: 80%;
+    text-align: center;
+  }
 }
 
-/* メインコンテンツ */
-main {
-  padding: 100px 20px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* 画像のスタイル */
-.image-container {
+/* ========================= */
+/* ✅ 画像ギャラリー（課外活動用） */
+/* ========================= */
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
 }
 
-.image-container img {
+.gallery img {
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -89,145 +72,49 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* フッター */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  width: 100%;
-}
-
-/* リンクのスタイル */
-a {
-  color: #0066cc;
-}
-
-a:hover {
-  color: #004499;
-  text-decoration: none;
-}
-
-/* セクション */
-section {
-  margin-bottom: 40px;
-}
-
-/* 見出し */
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* ボタン */
-button {
-  background-color: #0066cc;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #004499;
-}
-
-/* フォーム */
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #333;
-    padding: 10px 0;
-  }
-
-  nav ul.open {
-    display: flex;
-  }
-
-  nav ul li {
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 10px;
-  }
-}
-
-/* 問い合わせボタン */
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.contact-button {
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  color: white;
-  font-weight: bold;
-}
-
-.github { background-color: #333; }
-.twitter { background-color: #1DA1F2; }
-.linkedin { background-color: #0077B5; }
-
-/* フォーム */
+/* ========================= */
+/* ✅ フォームデザインの改良 */
+/* ========================= */
 form {
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-label {
-  font-weight: bold;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #aaa;
+  transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #0066cc;
+  outline: none;
 }
 
 button {
-  background-color: #0066cc;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
+  border-radius: 6px;
 }
 
-button:hover {
-  background-color: #004499;
+/* ========================= */
+/* ✅ フッターの改善 */
+/* ========================= */
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
 }
 
+footer p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #1DA1F2;
+}
