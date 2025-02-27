@@ -1,0 +1,31 @@
+
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">ホーム</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">自己紹介</a></li>
+        <li><a href="{{ '/research/' | relative_url }}">研究内容</a></li>
+        <li><a href="{{ '/internship/' | relative_url }}">インターン経験</a></li>
+        <li><a href="{{ '/activities/' | relative_url }}">課外活動</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; 2025 竹嶋亮馬</p>
+  </footer>
+</body>
+</html>
