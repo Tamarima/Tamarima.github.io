@@ -33,15 +33,6 @@ description: "竹嶋亮馬の課外活動 - 国際ロボコン・アプリ開発
 💡 **ROS, OpenCV, Git などの実践スキル**  
 💡 **国際チームとの協働、英語での技術議論**  
 
-📷 **IROS 2021 表彰状**  
-![IROS 表彰状](/assets/images/iros_award.jpg)  
-
-📷 **IROS 2021 バーチャル競技風景**  
-![IROS 競技](images/iros_virtual.jpg)  
-
-📷 **IROS 2021 チーム写真**  
-![IROS チーム](images/iros_team.jpg)  
-
 ---
 
 ## **📱 アプリ開発**
@@ -81,8 +72,7 @@ description: "竹嶋亮馬の課外活動 - 国際ロボコン・アプリ開発
   <img src="/assets/images/iros_award.jpg" alt="IROS 2021 表彰状">
   <img src="/assets/images/iros_team.jpg" alt="IROS 2021 チーム写真">
   <img src="/assets/images/iros_virtual.jpg" alt="IROS 2021 競技風景">
-  <img src="/assets/images/app_dev.jpg" alt="アプリ開発">
-  <img src="/assets/images/conference.jpg" alt="学会発表">
+  <img src="/assets/images/activities1.jpg" alt="アプリ開発">
 </div>
 
 ---
