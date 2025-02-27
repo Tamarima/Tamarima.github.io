@@ -66,9 +66,9 @@ permalink: /internship/
 
 ## 📷 **インターン風景**
 <div class="gallery">
-  <img src="/assets/images/internship_1.jpg" alt="実験の様子">
-  <img src="/assets/images/internship_2.jpg" alt="解析作業">
-  <img src="/assets/images/internship_3.jpg" alt="発表・ディスカッション">
+  <img src="/assets/images/internship1.jpg" alt="流体解析">
+  <img src="/assets/images/internship2.jpg" alt="SEM画像">
+  <img src="/assets/images/internship3.jpg" alt="水滴発電">
 </div>
 
 ---
