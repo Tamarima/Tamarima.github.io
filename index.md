@@ -17,20 +17,30 @@ permalink: /
 
 ## 🔍 **メニュー**
 <div class="menu-container">
-  <a href="/about/" class="menu-button">🧑‍🎓 自己紹介</a>
-  <p>**竹嶋亮馬**のプロフィール、学歴、趣味・特技について詳しく紹介しています。</p>
-  
-  <a href="/research/" class="menu-button">🔬 研究内容</a>
-  <p>大学院での研究内容をまとめています。</p>
-  
-  <a href="/internship/" class="menu-button">🏢 インターン経験</a>
-  <p>インターン先での経験、開発事例、取得した特許について紹介しています。</p>
-  
-  <a href="/activities/" class="menu-button">🎯 課外活動</a>
-  <p>国際ロボコン5位入賞、アプリ開発、学会発表などの活動を掲載しています。</p>
-  
-  <a href="/contact/" class="menu-button">📩 お問い合わせ</a>
-  <p>ご質問やご連絡はこちらからどうぞ。</p>
+  <div class="menu-item">
+    <a href="/about/" class="menu-button">🧑‍🎓 自己紹介</a>
+    <p>**竹嶋亮馬** のプロフィール、学歴、趣味・特技について詳しく紹介しています。</p>
+  </div>
+
+  <div class="menu-item">
+    <a href="/research/" class="menu-button">🔬 研究内容</a>
+    <p>大学院での研究内容をまとめています。</p>
+  </div>
+
+  <div class="menu-item">
+    <a href="/internship/" class="menu-button">🏢 インターン経験</a>
+    <p>インターン先での経験、開発事例、取得した特許について紹介しています。</p>
+  </div>
+
+  <div class="menu-item">
+    <a href="/activities/" class="menu-button">🎯 課外活動</a>
+    <p>国際ロボコン5位入賞、アプリ開発、学会発表などの活動を掲載しています。</p>
+  </div>
+
+  <div class="menu-item">
+    <a href="/contact/" class="menu-button">📩 お問い合わせ</a>
+    <p>ご質問やご連絡はこちらからどうぞ。</p>
+  </div>
 </div>
 
 ---
@@ -50,3 +60,45 @@ permalink: /
 
 [![GitHub](https://img.shields.io/badge/GitHub-Tamarima-black?logo=github)](https://github.com/Tamarima)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-プロフィール-blue?logo=linkedin)](https://linkedin.com/in/your-profile)
+
+<style>
+/* メニューのレイアウト調整 */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+}
+
+.menu-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: #0066cc;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu-button:hover {
+  background: #004499;
+  transform: scale(1.05);
+}
+
+.menu-item p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+</style>
