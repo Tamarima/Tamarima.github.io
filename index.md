@@ -76,29 +76,37 @@ permalink: /
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 200px;
+  width: 220px;
 }
 
+/* ボタンのデザイン改善 */
 .menu-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  background: #0066cc;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
   font-weight: bold;
+  font-size: 16px;
   text-align: center;
-  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* ホバーエフェクト */
 .menu-button:hover {
-  background: #004499;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #004494);
+  transform: scale(1.08);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .menu-item p {
   font-size: 14px;
   color: #333;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 </style>
