@@ -59,7 +59,6 @@ permalink: /
 ---
 
 [![GitHub](https://img.shields.io/badge/GitHub-Tamarima-black?logo=github)](https://github.com/Tamarima)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-プロフィール-blue?logo=linkedin)](https://linkedin.com/in/your-profile)
 
 <style>
 /* メニューのレイアウト調整 */
