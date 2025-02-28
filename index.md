@@ -8,7 +8,7 @@ permalink: /
 **機械工学 × データ解析を活用した研究者・エンジニア**
 
 <div class="profile-container">
-  <img src="/assets/images/KUAS.jpg" alt="竹嶋亮馬" class="profile-image">
+  <img src="/assets/images/me.jpg" alt="竹嶋亮馬" class="profile-image">
   <p>京都先端科学大学大学院で機械工学を専攻し、特に「**薄膜材料の機械特性**」や「**データ解析を活用した材料設計**」について研究しています。<br>
   機械工学・データサイエンス・ロボティクスに興味のある方、ぜひご覧ください！</p>
 </div>
