@@ -63,6 +63,17 @@ permalink: /internship/
 
 ---
 
+## 🏅 **特許**
+
+私は、**株式会社ナノリサーチ京都**および**AC Biode株式会社**との共同研究により、以下の特許を取得しました。
+
+- **特許名:** 微粒子の製造方法、および、微粒子製造装置
+- **発明者:** 藤井 泰久、竹嶋 亮馬、水沢 厚志
+- **出願番号:** 特願2023-103300
+- **公開番号:** 特開2025-002915
+- **詳細:** [J-GLOBAL](https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202503012108193350)
+
+
 ## 📷 **インターン風景**
 <div class="gallery">
   <img src="/assets/images/internship1.jpg" alt="流体解析">
