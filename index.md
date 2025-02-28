@@ -67,7 +67,7 @@ permalink: /
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -84,9 +84,10 @@ permalink: /
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 14px;
-  border-radius: 12px;
+  width: 220px;
+  height: 50px;
+  padding: 12px;
+  border-radius: 10px;
   background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
   font-weight: bold;
@@ -100,7 +101,7 @@ permalink: /
 /* ホバーエフェクト */
 .menu-button:hover {
   background: linear-gradient(135deg, #0056b3, #004494);
-  transform: scale(1.08);
+  transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -108,6 +109,8 @@ permalink: /
   font-size: 14px;
   color: #333;
   margin-top: 8px;
+  width: 220px;
+  line-height: 1.4;
 }
 
 /* プロフィール画像のスタイル */
@@ -130,5 +133,19 @@ permalink: /
 
 .profile-image:hover {
   transform: scale(1.05);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .menu-button {
+    width: 90%;
+  }
 }
 </style>
