@@ -18,10 +18,19 @@ permalink: /
 ## 🔍 **メニュー**
 <div class="menu-container">
   <a href="/about/" class="menu-button">🧑‍🎓 自己紹介</a>
+  <p>**竹嶋亮馬**のプロフィール、学歴、趣味・特技について詳しく紹介しています。</p>
+  
   <a href="/research/" class="menu-button">🔬 研究内容</a>
+  <p>大学院での研究内容をまとめています。</p>
+  
   <a href="/internship/" class="menu-button">🏢 インターン経験</a>
+  <p>インターン先での経験、開発事例、取得した特許について紹介しています。</p>
+  
   <a href="/activities/" class="menu-button">🎯 課外活動</a>
+  <p>国際ロボコン5位入賞、アプリ開発、学会発表などの活動を掲載しています。</p>
+  
   <a href="/contact/" class="menu-button">📩 お問い合わせ</a>
+  <p>ご質問やご連絡はこちらからどうぞ。</p>
 </div>
 
 ---
